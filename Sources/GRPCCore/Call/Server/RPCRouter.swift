@@ -168,7 +168,7 @@ public struct RPCRouter: Sendable {
 }
 
 extension RPCRouter {
-  internal func handle(
+  public func handle(
     stream: RPCStream<
       RPCAsyncSequence<RPCRequestPart, any Error>,
       RPCWriter<RPCResponsePart>.Closable
